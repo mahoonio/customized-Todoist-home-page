@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="myScript.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,46 @@
     <div class="container">
       <h2>My Todoist</h2>
       <div class="box">
-        <div class="box shadow"></div>
+        <div class="box shadow">
+          <div class="add-task">
+            <button id="tbtn" class="task-btn" onclick="showAddField()">
+              <span>+</span>
+            </button>
+            <label for="tbtn">add task</label>
+          </div>
+          <div id="AddField" class="text-area-container">
+            <input
+              id="user-input"
+              class="user-input"
+              type="text"
+              placeholder="add a new task"
+              required
+            />
+            <button class="btn-add">ADD</button>
+            <button class="btn-cancel" onclick="hideAddField()">CANCEL</button>
+          </div>
+            <!-- <div class="task-list-container"> -->
+              <ul class="myList">
+                <li>
+                    <button  id="li1" ></button>
+                    <label for="li1"><span>behsazan interview</span></label>
+                </li>
+                    <li>
+                        <button id="li2" ></button>
+                        <label for="li2"><span>cook dinner</span></label>
+                    </li>
+                    <li>
+                        <button  id="li3" ></button>
+                        <label for="li3"><span>play video games</span></label>
+                    </li>
+               </ul>
+               <div class="img-container">
+                    <img src="Images/DayOff.png" >
+               </div>
+               
+            <!-- </div> -->
+          </div>
+        </div>
       </div>
     </div>
   </body>

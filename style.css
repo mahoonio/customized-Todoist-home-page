@@ -1,13 +1,12 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 h2 {
   position: relative;
   font-size: 36px;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
   color: #000;
 }
 body {
@@ -28,18 +27,150 @@ body {
 .container .box {
   position: relative;
   display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 26;
-  font-weight: lighter;
+  font-weight: normal;
   margin: 40px 0;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 1200px;
   height: 800px;
   background: linear-gradient(to bottom right, #e45e52e8, #eba19a);
   color: rgba(0, 0, 0, 0.1);
 }
+.add-task {
+  display: flex;
+}
+.add-task label {
+  color: black;
+  font-size: 28px;
+  padding: 2px;
+}
+.add-task button {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.add-task label:hover {
+  color: crimson;
+  border-radius: 36px;
+  height: 2px;
+  cursor: pointer;
+}
+.add-task button:hover {
+  color: white;
+  border: 1px solid crimson;
+  border-radius: 360px;
+  background: crimson;
+  outline: crimson;
+}
+
 .container .box.shadow {
   box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.text-area-container {
+  /* display: block; */
+  display: none;
+  position: absolute;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.text-area-container input {
+  width: 600px;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.text-area-container input:focus {
+  border: 2px solid rgba(80, 224, 100, 0.856);
+}
+.text-area-container .btn-add {
+  display: block;
+  margin-top: 5px;
+  margin-left: 69%;
+  width: 90px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid rgba(80, 224, 100, 0.856);
+  border-radius: 15px;
+  background: rgba(80, 224, 100, 0.856);
+}
+.text-area-container .btn-cancel {
+  display: block;
+  margin-left: 85%;
+  margin-top: -45px;
+  width: 90px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  background: transparent;
+  border-radius: 15px;
+}
+.text-area-container .btn-cancel:hover {
+  background: #e45e52e8;
+  color: white;
+  cursor: pointer;
+}
+.text-area-container .btn-add:hover {
+  background: green;
+  color: white;
+  border: 1px solid green;
+  cursor: pointer;
+}
+::placeholder {
+  color: white;
+  opacity: 0.3;
+}
+
+.myList {
+  display: block;
+  position: absolute;
+  list-style: none;
+  font-size: 28;
+  font-weight: 100;
+  color: black;
+  max-width: 1200px;
+  margin: 150px 800px 0 0;
+  z-index: +10;
+}
+
+.myList li button {
+  display: inline-block;
+  background: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 36px;
+  margin: 20px 10px;
+  background-color: none;
+}
+.myList li label {
+  font-size: 26px;
+  padding: 2px 0 0 0;
+}
+.myList li button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.myList li label:hover {
+  text-decoration: rgb(211, 140, 140) underline;
+}
+.img-container {
+  margin: 300px 0 0 0;
+}
+.img-container img {
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 500px;
 }
