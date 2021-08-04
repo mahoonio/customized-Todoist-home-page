@@ -21,29 +21,30 @@
           </div>
           <div id="AddField" class="text-area-container">
             <input
-              id="user-input"
+              id="debug"
               class="user-input"
               type="text"
               placeholder="add a new task"
-              required
             />
-            <button class="btn-add">ADD</button>
+            <button id ="pbtn" class="btn-add" onclick="addToList()">ADD</button>
             <button class="btn-cancel" onclick="hideAddField()">CANCEL</button>
           </div>
             <!-- <div class="task-list-container"> -->
-              <ul class="myList">
-                <li>
-                    <button  id="li1" ></button>
-                    <label for="li1"><span>behsazan interview</span></label>
+              <ul id="pls" class="myList">
+                <!-- <li>
+                    <button  id="li1" ><label for="li1"><span>behsazan interview</span></label></button>
+                    
                 </li>
                     <li>
-                        <button id="li2" ></button>
-                        <label for="li2"><span>cook dinner</span></label>
+                        <button id="li2" >
+                          <label >cook dinner</label>
+                        </button>
+                        
                     </li>
                     <li>
                         <button  id="li3" ></button>
                         <label for="li3"><span>play video games</span></label>
-                    </li>
+                    </li> -->
                </ul>
                <div class="img-container">
                    <img src="Images/DayOff.png" >
