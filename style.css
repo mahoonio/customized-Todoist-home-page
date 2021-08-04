@@ -39,10 +39,10 @@ body {
 }
 .add-task {
   display: flex;
+  font-size: 28px;
 }
 .add-task label {
   color: black;
-  font-size: 28px;
   padding: 2px;
 }
 .add-task button {
@@ -88,6 +88,7 @@ body {
   color: white;
   font-size: 24px;
   font-weight: lighter;
+  white-space: nowrap;
 }
 
 .text-area-container input:focus {
@@ -142,6 +143,9 @@ body {
   margin: 150px 800px 0 0;
   z-index: +10;
 }
+.myList li {
+  white-space: nowrap;
+}
 
 .myList li button {
   display: inline-block;
@@ -173,4 +177,148 @@ body {
   position: absolute;
   width: 500px;
   height: 500px;
+}
+
+/* Making it Responsive */
+
+/* laptop,desktop and monitor */
+@media screen and (max-width: 1285px) {
+  .container .box {
+    width: 900px;
+    height: 600px;
+  }
+  .img-container {
+    margin: 200px 0 0 0;
+  }
+
+  .img-container img {
+    width: 375px;
+    height: 375px;
+  }
+  .myList {
+    margin: 150px 500px 0 0;
+  }
+  .myList li label {
+    font-size: 24px;
+  }
+}
+/* ipad,tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .add-task {
+    font-size: 26px;
+  }
+  .container .box {
+    width: 600px;
+    height: 400px;
+  }
+  .img-container {
+    margin: 200px 0 0 20px;
+  }
+
+  .img-container img {
+    width: 200px;
+    height: 200px;
+  }
+  .myList {
+    margin: 100px 300px 0 0;
+  }
+  .myList li button {
+    margin: 5px 10px;
+  }
+  .myList li label {
+    font-size: 20px;
+  }
+  .text-area-container input {
+    width: 350px;
+  }
+  .text-area-container .btn-add {
+    width: min-content;
+  }
+  .text-area-container .btn-cancel {
+    width: min-content;
+  }
+}
+/* mobile phones */
+@media (max-width: 767px) {
+  .add-task {
+    font-size: 24px;
+  }
+  .container .box {
+    width: 400px;
+    height: 600px;
+  }
+  .img-container {
+    margin: 350px 150px 0 0;
+  }
+
+  .img-container img {
+    width: 200px;
+    height: 200px;
+  }
+  .myList {
+    margin: 130px 230px 0 0;
+  }
+  .myList li button {
+    margin: 5px 10px;
+  }
+  .myList li label {
+    font-size: 20px;
+  }
+  .text-area-container input {
+    width: 350px;
+  }
+  .text-area-container .btn-add {
+    width: min-content;
+  }
+  .text-area-container .btn-cancel {
+    width: min-content;
+  }
+}
+/* very small */
+@media (max-width: 495px) {
+  .add-task {
+    font-size: 16px;
+    white-space: nowrap;
+    justify-content: center;
+  }
+  .add-task button {
+    font-size: 16px;
+  }
+  .container .box {
+    width: 250px;
+    height: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .img-container {
+    margin: 350px 150px 0 0;
+  }
+
+  .img-container img {
+    width: 150px;
+    height: 150px;
+  }
+  .myList {
+    margin: 150px 150px 0 0;
+  }
+  .myList li button {
+    margin: 5px 10px;
+  }
+  .myList li label {
+    font-size: 14px;
+  }
+  .text-area-container input {
+    width: 200px;
+    height: 25px;
+    font-size: 14px;
+  }
+  .text-area-container .btn-add {
+    width: min-content;
+    font-size: 10px;
+    margin-left: 55%;
+  }
+  .text-area-container .btn-cancel {
+    width: min-content;
+    margin-left: 75%;
+  }
 }
