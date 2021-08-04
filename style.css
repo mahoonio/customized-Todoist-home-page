@@ -150,11 +150,12 @@ body {
 
 .myList li button {
   display: inline-block;
+  color: white;
   background: none;
   outline: none;
-  width: 100px;
+  width: 420px;
   height: 20px;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
   border-radius: 36px;
   margin: 20px 10px;
   background-color: none;

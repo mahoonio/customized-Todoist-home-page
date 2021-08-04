@@ -10,30 +10,27 @@ function hideAddField()
 }
 
 
-const input = document.querySelector("input");
-const addBtn = document.querySelector(".btn-add");
+var inputnode = document.querySelector('.text-area-container > input');
+inputnode.addEventListener('keyup',(e) => {
+   (e.keyCode === 13? addList() : null )
+})
+var addbtn = document.getElementById("pbtn");
 
-
-
-
-function addToList(e){
-   const taskList = document.getElementById("pls");
-   console.log(addBtn);
-   ;
-   // var length = document.querySelectorAll("li").length;
-   // var id = "li"+length;
-   // const label = document.createElement('label');
-   // label.htmlFor = id;
-   const newLi = document.createElement('li');
-   const btn = document.createElement('button');
-   
-   
-   
-      newLi.appendChild(btn);
-      
-      // newLi.appendChild(btn);
-      // newLi.appendChild(label);
-      // taskInput.value = '';
-      taskList.appendChild(newLi);
-   
+function addList()
+{
+   if(inputnode.value!=='')
+   {
+      var text = inputnode.value;
+  var button = document.createElement('button');
+  button.innerHTML = text;
+  var Li = document.createElement('LI');
+  var Ul = document.getElementById("ulist");
+  Li.appendChild(button);
+  Ul.appendChild(Li);
+   }
+  
+  button.addEventListener('click' , function(){
+     const parent = this.parentNode;
+     parent.remove();
+  })
 }

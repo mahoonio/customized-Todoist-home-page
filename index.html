@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="myScript.js"></script>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,11 +26,11 @@
               type="text"
               placeholder="add a new task"
             />
-            <button id ="pbtn" class="btn-add" onclick="addToList()">ADD</button>
+            <button id ="pbtn" class="btn-add" onclick="addList()">ADD</button>
             <button class="btn-cancel" onclick="hideAddField()">CANCEL</button>
           </div>
             <!-- <div class="task-list-container"> -->
-              <ul id="pls" class="myList">
+              <ul id="ulist" class="myList">
                 <!-- <li>
                     <button  id="li1" ><label for="li1"><span>behsazan interview</span></label></button>
                     
@@ -55,5 +55,6 @@
         </div>
       </div>
     </div>
+    <script src="myScript.js"></script>
   </body>
 </html>
